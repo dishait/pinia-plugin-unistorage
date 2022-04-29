@@ -1,0 +1,45 @@
+{
+	"name": "pinia-plugin-unistorage",
+	"version": "0.0.1",
+	"description": "uniapp 下 pinia 的本地数据缓存插件",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"prepublishOnly": "npm run build",
+		"release": "bumpp --commit --push --tag && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dishait/pinia-plugin-unistorage.git"
+	},
+	"keywords": [
+		"pinia",
+		"uniapp",
+		"storage",
+		"pinia-plugin",
+		"persistence"
+	],
+	"devDependencies": {
+		"bumpp": "^7.1.1",
+		"tsup": "^5.12.6",
+		"typescript": "^4.6.4"
+	},
+	"author": {
+		"name": "markthree",
+		"email": "1801982702@qq.com",
+		"url": "https://github.com/markthree"
+	},
+	"license": "MIT"
+}
