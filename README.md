@@ -77,7 +77,7 @@ export function createApp() {
 
 #### 2. `hbuilderx` 创建的 `uniapp` 项目
 
-直接插件市场安装后引入注册
+👉 [直接插件市场安装](https://ext.dcloud.net.cn/plugin?id=8081) 后引入注册
 
 ```js
 // main.js
