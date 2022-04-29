@@ -1,7 +1,17 @@
-# pinia-plugin-unistorage
+<div align="center">
+    <img width="200px" height="200px" src="https://gitee.com/dishait/pinia-plugin-unistorage/raw/main/static/favicon.png" />
+    <h1>pinia-plugin-unistorage</h1>
+    <p>uniapp 下 pinia 的本地数据缓存插件</p>
+</div>
 
-`uniapp` 下 `pinia` 的本地数据缓存插件
+<br />
+<br />
 
+<div align="center">
+    <img width="100%" height="100%" src="https://gitee.com/dishait/pinia-plugin-unistorage/raw/main/static/pinia-plugin-unistorage.gif" />
+</div>
+
+<br />
 <br />
 
 ## 引用
@@ -49,12 +59,12 @@ import { createUnistorage } from 'pinia-plugin-unistorage'
 export function createApp() {
 	const app = createSSRApp(App)
 
-	const pinia = Pinia.createPinia()
+	const store = Pinia.createPinia()
 
 	// 关键代码 👇
-	pinia.use(createUnistorage())
+	store.use(createUnistorage())
 
-	app.use()
+	app.use(store)
 
 	return {
 		app,
@@ -78,12 +88,12 @@ import { createUnistorage } from 'pinia-plugin-unistorage'
 export function createApp() {
 	const app = createSSRApp(App)
 
-	const pinia = Pinia.createPinia()
+	const store = Pinia.createPinia()
 
 	// 关键代码 👇
-	pinia.use(createUnistorage())
+	store.use(createUnistorage())
 
-	app.use()
+	app.use(store)
 
 	return {
 		app,
@@ -170,7 +180,7 @@ export const useStore = defineStore('main', {
 				return JSON.stringify(v)
 			},
 			// 反序列化，默认为 JSON.parse
-			deserialize() {
+			deserialize(v) {
 				return JSON.parse(v)
 			}
 		}
@@ -209,4 +219,4 @@ export const useStore = defineStore('main', {
 
 Made with [markthree](https://github.com/markthree)
 
-Published under [MIT License](./LICENSE).
+Published under [MIT 

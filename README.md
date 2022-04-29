@@ -1,7 +1,17 @@
-# pinia-plugin-unistorage
+<div align="center">
+    <img width="200px" height="200px" src="https://gitee.com/dishait/pinia-plugin-unistorage/raw/main/static/favicon.png" />
+    <h1>pinia-plugin-unistorage</h1>
+    <p>uniapp 下 pinia 的本地数据缓存插件</p>
+</div>
 
-`uniapp` 下 `pinia` 的本地数据缓存插件
+<br />
+<br />
 
+<div align="center">
+    <img width="100%" height="100%" src="https://gitee.com/dishait/pinia-plugin-unistorage/raw/main/static/pinia-plugin-unistorage.gif" />
+</div>
+
+<br />
 <br />
 
 ## 引用
