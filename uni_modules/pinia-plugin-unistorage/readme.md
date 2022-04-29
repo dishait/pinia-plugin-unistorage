@@ -219,4 +219,4 @@ export const useStore = defineStore('main', {
 
 Made with [markthree](https://github.com/markthree)
 
-Published under [MIT 
+Published under [MIT License](./LICENSE).
