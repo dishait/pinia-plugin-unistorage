@@ -49,12 +49,12 @@ import { createUnistorage } from 'pinia-plugin-unistorage'
 export function createApp() {
 	const app = createSSRApp(App)
 
-	const pinia = Pinia.createPinia()
+	const store = Pinia.createPinia()
 
 	// 关键代码 👇
-	pinia.use(createUnistorage())
+	store.use(createUnistorage())
 
-	app.use()
+	app.use(store)
 
 	return {
 		app,
@@ -78,12 +78,12 @@ import { createUnistorage } from 'pinia-plugin-unistorage'
 export function createApp() {
 	const app = createSSRApp(App)
 
-	const pinia = Pinia.createPinia()
+	const store = Pinia.createPinia()
 
 	// 关键代码 👇
-	pinia.use(createUnistorage())
+	store.use(createUnistorage())
 
-	app.use()
+	app.use(store)
 
 	return {
 		app,
@@ -170,7 +170,7 @@ export const useStore = defineStore('main', {
 				return JSON.stringify(v)
 			},
 			// 反序列化，默认为 JSON.parse
-			deserialize() {
+			deserialize(v) {
 				return JSON.parse(v)
 			}
 		}
