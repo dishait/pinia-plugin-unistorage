@@ -83,7 +83,7 @@ export function createApp() {
 // main.js
 import { createSSRApp } from 'vue'
 import * as Pinia from 'pinia'
-import { createUnistorage } from 'pinia-plugin-unistorage'
+import { createUnistorage } from 'uni_modules/pinia-plugin-unistorage'
 
 export function createApp() {
 	const app = createSSRApp(App)
