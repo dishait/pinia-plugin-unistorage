@@ -38,7 +38,7 @@ export function createUnistorage(globalOptions = {}) {
 							: state
 						uni.setStorageSync(
 							key,
-							serializer.deserialize(toStore)
+							serializer.serialize(toStore)
 						)
 					} catch (_error) {}
 				},
