@@ -3,12 +3,10 @@ lockfileVersion: 5.3
 specifiers:
   bumpp: ^7.1.1
   tsup: ^5.12.6
-  typescript: ^4.6.4
 
 devDependencies:
   bumpp: registry.npmmirror.com/bumpp/7.1.1
-  tsup: registry.npmmirror.com/tsup/5.12.6_typescript@4.6.4
-  typescript: registry.npmmirror.com/typescript/4.6.4
+  tsup: registry.npmmirror.com/tsup/5.12.6
 
 packages:
 
@@ -1091,9 +1089,8 @@ packages:
     version: 0.1.13
     dev: true
 
-  registry.npmmirror.com/tsup/5.12.6_typescript@4.6.4:
+  registry.npmmirror.com/tsup/5.12.6:
     resolution: {integrity: sha512-tpePOgdMRKRgazF+ujq9k1Fo44PUFUJJjRLtxq87pQrYW/Ub/fu1GpFGLzdUF9qjJ4FX1ykhf2d9mWCNy+jAtg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tsup/-/tsup-5.12.6.tgz}
-    id: registry.npmmirror.com/tsup/5.12.6
     name: tsup
     version: 5.12.6
     hasBin: true
@@ -1117,7 +1114,6 @@ packages:
       source-map: registry.npmmirror.com/source-map/0.7.3
       sucrase: registry.npmmirror.com/sucrase/3.21.0
       tree-kill: registry.npmmirror.com/tree-kill/1.2.2
-      typescript: registry.npmmirror.com/typescript/4.6.4
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -1129,14 +1125,6 @@ packages:
     name: type-detect
     version: 4.0.8
     engines: {node: '>=4'}
-    dev: true
-
-  registry.npmmirror.com/typescript/4.6.4:
-    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typescript/-/typescript-4.6.4.tgz}
-    name: typescript
-    version: 4.6.4
-    engines: {node: '>=4.2.0'}
-    hasBin: true
     dev: true
 
   registry.npmmirror.com/typical/4.0.0:

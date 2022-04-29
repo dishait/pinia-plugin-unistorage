@@ -4,12 +4,10 @@
 	"description": "uniapp 下 pinia 的本地数据缓存插件",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"require": "./dist/index.js",
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.ts"
+			"import": "./dist/index.mjs"
 		}
 	},
 	"files": [
@@ -33,8 +31,7 @@
 	],
 	"devDependencies": {
 		"bumpp": "^7.1.1",
-		"tsup": "^5.12.6",
-		"typescript": "^4.6.4"
+		"tsup": "^5.12.6"
 	},
 	"author": {
 		"name": "markthree",
