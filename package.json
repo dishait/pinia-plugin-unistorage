@@ -14,7 +14,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup",
+		"build": "unbuild",
 		"prepublishOnly": "npm run build",
 		"release": "bumpp --commit --push --tag && npm publish"
 	},
@@ -30,13 +30,17 @@
 		"persistence"
 	],
 	"devDependencies": {
-		"bumpp": "^7.1.1",
-		"tsup": "^5.12.6"
+		"@types/node": "^18.15.5",
+		"bumpp": "^9.0.0",
+		"unbuild": "^1.1.2"
 	},
 	"author": {
 		"name": "markthree",
 		"email": "1801982702@qq.com",
 		"url": "https://github.com/markthree"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"pinia": "^2.0.33"
+	}
 }

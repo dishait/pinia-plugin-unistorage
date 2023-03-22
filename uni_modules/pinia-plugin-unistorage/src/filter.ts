@@ -1,10 +1,12 @@
-function get(state, path) {
+import type { StateTree } from 'pinia'
+
+function get(state: StateTree, path: Array<string>) {
 	return path.reduce((obj, p) => {
 		return obj?.[p]
 	}, state)
 }
 
-function set(state, path, val) {
+function set(state: StateTree, path: Array<string>, val: unknown): StateTree {
 	return (
 		(path.slice(0, -1).reduce((obj, p) => {
 			if (!/^(__proto__)$/.test(p))
@@ -15,7 +17,7 @@ function set(state, path, val) {
 	)
 }
 
-export function pick(baseState, paths) {
+export function pick(baseState: StateTree, paths: string[]): StateTree {
 	return paths.reduce((substate, path) => {
 		const pathArray = path.split('.')
 		return set(
