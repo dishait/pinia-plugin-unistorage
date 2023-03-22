@@ -1,6 +1,6 @@
 {
 	"name": "pinia-plugin-unistorage",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "uniapp 下 pinia 的本地数据缓存插件",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
