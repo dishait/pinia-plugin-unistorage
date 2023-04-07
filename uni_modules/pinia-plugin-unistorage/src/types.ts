@@ -68,6 +68,6 @@ export type PersistedStateFactoryOptions = Prettify<Pick<
 
 declare module 'pinia' {
     export interface DefineStoreOptionsBase<S extends StateTree, Store> {
-        persist?: boolean | PersistedStateOptions | PersistedStateOptions[]
+        unistorage?: boolean | PersistedStateOptions
     }
 }

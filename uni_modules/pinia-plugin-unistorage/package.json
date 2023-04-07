@@ -1,7 +1,7 @@
 {
 	"id": "pinia-plugin-unistorage",
 	"displayName": "pinia-plugin-unistorage",
-	"version": "0.0.7",
+	"version": "0.0.11",
 	"description": "uniapp 下 pinia 的本地数据缓存插件",
 	"keywords": [
         "pinia",
@@ -13,12 +13,8 @@
 	"engines": {
 		"HBuilderX": "^3.4.7"
 	},
-	"dcloudext": {
-		"category": [
-			"JS SDK",
-			"通用 SDK"
-		],
-		"sale": {
+    "dcloudext": {
+        "sale": {
 			"regular": {
 				"price": "0.00"
 			},
@@ -34,7 +30,8 @@
 			"data": "无",
 			"permissions": "无"
 		},
-		"npmurl": "https://www.npmjs.com/package/pinia-plugin-unistorage"
+        "npmurl": "https://www.npmjs.com/package/pinia-plugin-unistorage",
+        "type": "sdk-js"
 	},
 	"uni_modules": {
 		"dependencies": [],
@@ -72,11 +69,10 @@
 					"百度": "y",
 					"字节跳动": "y",
 					"QQ": "y",
-					"钉钉": "u",
-					"快手": "u",
-					"飞书": "u",
-					"京东": "u",
-					"小红书": "u"
+					"钉钉": "y",
+					"快手": "y",
+					"飞书": "y",
+                    "京东": "y"
 				},
 				"快应用": {
 					"华为": "y",
