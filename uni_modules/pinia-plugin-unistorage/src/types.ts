@@ -58,12 +58,6 @@ export type PersistedStateFactoryOptions = Prettify<Pick<
      * @default storeKey => storeKey
      */
     key?: (storeKey: string) => string
-
-    /**
-     * Automatically persists all stores, opt-out individually.
-     * @default false
-     */
-    auto?: boolean
 }>
 
 declare module 'pinia' {
