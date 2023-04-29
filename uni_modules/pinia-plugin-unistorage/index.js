@@ -32,7 +32,12 @@ const normalizeOptions = (options, globalOptions) => {
   });
 };
 
-function createUnistorage(globalOptions = {}) {
+function passage(key) {
+  return key;
+}
+function createUnistorage(globalOptions) {
+  const { key: normalizeKey = passage } = globalOptions || {};
+  delete globalOptions.key;
   return function(ctx) {
     {
       const { store, options } = ctx;
@@ -50,8 +55,9 @@ function createUnistorage(globalOptions = {}) {
         key = store.$id
       } = normalizeOptions(unistorage, globalOptions);
       beforeRestore?.(ctx);
+      const normalizedKey = normalizeKey(key);
       try {
-        const fromStorage = uni.getStorageSync(store.$id);
+        const fromStorage = uni.getStorageSync(normalizedKey);
         if (fromStorage)
           store.$patch(serializer.deserialize(fromStorage));
       } catch (_error) {
@@ -62,7 +68,7 @@ function createUnistorage(globalOptions = {}) {
           try {
             const toStore = Array.isArray(paths) ? pick(state, paths) : state;
             uni.setStorageSync(
-              key,
+              normalizedKey,
               serializer.serialize(toStore)
             );
           } catch (_error) {
