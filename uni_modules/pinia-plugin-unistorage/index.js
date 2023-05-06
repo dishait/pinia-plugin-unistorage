@@ -37,7 +37,9 @@ function passage(key) {
 }
 function createUnistorage(globalOptions) {
   const { key: normalizeKey = passage } = globalOptions || {};
-  delete globalOptions.key;
+  if (globalOptions?.key) {
+    delete globalOptions.key;
+  }
   return function(ctx) {
     {
       const { store, options } = ctx;
@@ -58,8 +60,9 @@ function createUnistorage(globalOptions) {
       const normalizedKey = normalizeKey(key);
       try {
         const fromStorage = uni.getStorageSync(normalizedKey);
-        if (fromStorage)
+        if (fromStorage) {
           store.$patch(serializer.deserialize(fromStorage));
+        }
       } catch (_error) {
       }
       afterRestore?.(ctx);
