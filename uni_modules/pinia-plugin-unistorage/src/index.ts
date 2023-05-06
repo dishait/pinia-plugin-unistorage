@@ -8,7 +8,7 @@ function passage(key: string) {
 }
 
 export function createUnistorage(
-  globalOptions?: PersistedStateFactoryOptions,
+  globalOptions: PersistedStateFactoryOptions = {},
 ): PiniaPlugin {
   const { key: normalizeKey = passage } = globalOptions || {};
   if (globalOptions?.key) {
