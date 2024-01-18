@@ -1,11 +1,11 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index"
-		}
-	],
-	"globalStyle": {
-		"navigationStyle": "custom",
-		"navigationBarTextStyle": "black"
-	}
+  "pages": [
+    {
+      "path": "pages/index/index"
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  }
 }

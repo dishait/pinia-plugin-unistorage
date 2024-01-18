@@ -1,48 +1,48 @@
 {
-	"name": "pinia-plugin-unistorage",
-	"version": "0.0.17",
-	"description": "uniapp 下 pinia 的本地数据缓存插件",
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		".": {
-			"require": "./dist/index.cjs",
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.ts"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "unbuild",
-		"prepublishOnly": "npm run build",
-		"release": "bumpp --commit --push --tag && npm publish"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dishait/pinia-plugin-unistorage.git"
-	},
-	"keywords": [
-		"pinia",
-		"uniapp",
-		"storage",
-		"pinia-plugin",
-		"persistence"
-	],
-	"devDependencies": {
-		"@types/node": "^18.19.8",
-		"bumpp": "^9.3.0",
-		"unbuild": "^2.0.0"
-	},
-	"author": {
-		"name": "markthree",
-		"email": "1801982702@qq.com",
-		"url": "https://github.com/markthree"
-	},
-	"license": "MIT",
-	"dependencies": {
-		"pinia": "^2.1.7"
-	}
+  "name": "pinia-plugin-unistorage",
+  "version": "0.0.17",
+  "description": "uniapp 下 pinia 的本地数据缓存插件",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp --commit --push --tag && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dishait/pinia-plugin-unistorage.git"
+  },
+  "keywords": [
+    "pinia",
+    "uniapp",
+    "storage",
+    "pinia-plugin",
+    "persistence"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.19.8",
+    "bumpp": "^9.3.0",
+    "unbuild": "^2.0.0"
+  },
+  "author": {
+    "name": "markthree",
+    "email": "1801982702@qq.com",
+    "url": "https://github.com/markthree"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pinia": "^2.1.7"
+  }
 }
