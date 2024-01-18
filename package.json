@@ -32,9 +32,9 @@
 		"persistence"
 	],
 	"devDependencies": {
-		"@types/node": "^18.15.5",
-		"bumpp": "^9.0.0",
-		"unbuild": "^1.1.2"
+		"@types/node": "^18.19.8",
+		"bumpp": "^9.3.0",
+		"unbuild": "^2.0.0"
 	},
 	"author": {
 		"name": "markthree",
@@ -43,6 +43,6 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"pinia": "^2.0.33"
+		"pinia": "^2.1.7"
 	}
 }

@@ -35,7 +35,7 @@ const normalizeOptions = (options, globalOptions) => {
 function passage(key) {
   return key;
 }
-function createUnistorage(globalOptions) {
+function createUnistorage(globalOptions = {}) {
   const { key: normalizeKey = passage } = globalOptions || {};
   if (globalOptions?.key) {
     delete globalOptions.key;
