@@ -7,9 +7,11 @@ function set(state, path, val) {
   return path.slice(0, -1).reduce((obj, p) => {
     if (!/^(__proto__)$/.test(p)) {
       return obj[p] = obj[p] || {};
-    } else
+    } else {
       return {};
-  }, state)[path[path.length - 1]] = val, state;
+    }
+  }, state)[path[path.length - 1]] = val,
+    state;
 }
 function pick(baseState, paths) {
   return paths.reduce((substate, path) => {
@@ -17,7 +19,7 @@ function pick(baseState, paths) {
     return set(
       substate,
       pathArray,
-      get(baseState, pathArray)
+      get(baseState, pathArray),
     );
   }, {});
 }
@@ -28,7 +30,7 @@ const normalizeOptions = (options, globalOptions) => {
   return new Proxy(options, {
     get(t, p, r) {
       return Reflect.get(t, p, r) || Reflect.get(globalOptions, p, r);
-    }
+    },
   });
 };
 
@@ -40,21 +42,22 @@ function createUnistorage(globalOptions = {}) {
   if (globalOptions?.key) {
     delete globalOptions.key;
   }
-  return function(ctx) {
+  return function (ctx) {
     {
       const { store, options } = ctx;
       let { unistorage } = options || {};
-      if (!unistorage)
+      if (!unistorage) {
         return;
+      }
       const {
         paths = null,
         afterRestore,
         beforeRestore,
         serializer = {
           serialize: JSON.stringify,
-          deserialize: JSON.parse
+          deserialize: JSON.parse,
         },
-        key = store.$id
+        key = store.$id,
       } = normalizeOptions(unistorage, globalOptions);
       beforeRestore?.(ctx);
       const normalizedKey = normalizeKey(key);
@@ -72,12 +75,12 @@ function createUnistorage(globalOptions = {}) {
             const toStore = Array.isArray(paths) ? pick(state, paths) : state;
             uni.setStorageSync(
               normalizedKey,
-              serializer.serialize(toStore)
+              serializer.serialize(toStore),
             );
           } catch (_error) {
           }
         },
-        { detached: true }
+        { detached: true },
       );
     }
   };
