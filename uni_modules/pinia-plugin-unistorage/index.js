@@ -153,7 +153,7 @@ function createUnistorage(globalOptions = {}) {
   });
   return (ctx) => {
     if (ctx.options.unistorage) {
-      ctx.options.persist = ctx.unistorage;
+      ctx.options.persist = ctx.options.unistorage;
     }
     return persistedState(ctx);
   };
