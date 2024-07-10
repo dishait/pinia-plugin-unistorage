@@ -10,6 +10,15 @@
     "pinia-plugin",
     "persistence"
   ],
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "engines": {
     "HBuilderX": "^3.4.7"
   },

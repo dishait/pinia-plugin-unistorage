@@ -1,5 +1,16 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node"
-  }
+    "strict": true,
+    "target": "ES2019",
+    "module": "ESNext",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["uni_modules"],
+  "exclude": ["dist", "node_modules"]
 }
