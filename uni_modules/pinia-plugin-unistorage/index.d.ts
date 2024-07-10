@@ -72,6 +72,7 @@ declare module 'pinia' {
          * @see https://prazdevs.github.io/pinia-plugin-persistedstate
          */
         persist?: boolean | PersistedStateOptions | PersistedStateOptions[];
+        unistorage?: boolean | PersistedStateOptions | PersistedStateOptions[];
     }
     interface PiniaCustomProperties {
         /**

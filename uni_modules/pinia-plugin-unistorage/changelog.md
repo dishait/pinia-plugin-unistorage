@@ -1,3 +1,5 @@
+## 0.0.21（2024-07-10）
+chore!: 继承 pinia-plugin-persistedstate
 ## 0.0.19（2024-01-18）
 
 fix: 重新构建，不需要默认参数

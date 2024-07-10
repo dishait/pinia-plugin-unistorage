@@ -1,7 +1,7 @@
 {
   "id": "pinia-plugin-unistorage",
   "displayName": "pinia-plugin-unistorage",
-  "version": "0.0.19",
+  "version": "0.0.21",
   "description": "uniapp 下 pinia 的本地数据缓存插件",
   "keywords": [
     "pinia",
@@ -9,7 +9,7 @@
     "storage",
     "pinia-plugin",
     "persistence"
-  ],
+],
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -48,7 +48,8 @@
     "platforms": {
       "cloud": {
         "tcb": "y",
-        "aliyun": "y"
+        "aliyun": "y",
+        "alipay": "n"
       },
       "client": {
         "Vue": {

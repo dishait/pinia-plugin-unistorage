@@ -25,7 +25,7 @@ export default defineBuildConfig({
         "utf-8",
       );
 
-      const newDts = dts + `
+      let newDts = dts + `
 /**
  * Creates a pinia persistence plugin with uniapp
  * @param factoryOptions global persistence options
@@ -33,6 +33,11 @@ export default defineBuildConfig({
  */
 declare function createUnistorage(factoryOptions?: PersistedStateFactoryOptions): PiniaPlugin;
       `;
+
+      newDts = newDts.replace(
+        "persist?: boolean | PersistedStateOptions | PersistedStateOptions[];",
+        "persist?: boolean | PersistedStateOptions | PersistedStateOptions[];\n        unistorage?: boolean | PersistedStateOptions | PersistedStateOptions[];",
+      );
 
       await writeFile(
         "./uni_modules/pinia-plugin-unistorage/index.d.ts",
