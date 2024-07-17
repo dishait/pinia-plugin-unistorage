@@ -37,6 +37,9 @@ declare function createUnistorage(factoryOptions?: PersistedStateFactoryOptions)
       newDts = newDts.replace(
         "persist?: boolean | PersistedStateOptions | PersistedStateOptions[];",
         "persist?: boolean | PersistedStateOptions | PersistedStateOptions[];\n        unistorage?: boolean | PersistedStateOptions | PersistedStateOptions[];",
+      ).replace(
+        "_default as default",
+        "_default as default, createUnistorage",
       );
 
       await writeFile(

@@ -101,7 +101,7 @@ declare function createPersistedState(factoryOptions?: PersistedStateFactoryOpti
 
 declare const _default: pinia.PiniaPlugin;
 
-export { PersistedStateFactoryOptions, PersistedStateOptions, Serializer, StorageLike, createPersistedState, _default as default };
+export { PersistedStateFactoryOptions, PersistedStateOptions, Serializer, StorageLike, createPersistedState, _default as default, createUnistorage };
 
 /**
  * Creates a pinia persistence plugin with uniapp

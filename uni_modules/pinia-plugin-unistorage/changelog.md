@@ -1,3 +1,5 @@
+## 0.1.0（2024-07-10）
+fix!: 更新 pinia 类型
 ## 0.0.21（2024-07-10）
 chore!: 继承 pinia-plugin-persistedstate
 ## 0.0.19（2024-01-18）
