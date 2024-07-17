@@ -1,7 +1,7 @@
 {
   "id": "pinia-plugin-unistorage",
   "displayName": "pinia-plugin-unistorage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "uniapp 下 pinia 的本地数据缓存插件",
   "keywords": [
     "pinia",

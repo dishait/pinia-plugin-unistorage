@@ -41,8 +41,5 @@
     "email": "1801982702@qq.com",
     "url": "https://github.com/markthree"
   },
-  "license": "MIT",
-  "dependencies": {
-    "typescript": "^5.5.3"
-  }
+  "license": "MIT"
 }
